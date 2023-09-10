@@ -205,7 +205,7 @@ body {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  padding: 18px 20px;
+  padding: 18px 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,11 +229,12 @@ body {
 
 .targets {
   background-color: #fff;
+  -webkit-transform: translateY(-137px);
+          transform: translateY(-137px);
 }
 .targets .container {
   position: relative;
   overflow: hidden;
-  top: -138px;
   max-width: 1473px;
 }
 .targets__content {
@@ -867,8 +868,8 @@ body {
 
 .contact {
   background-color: #f5f5f5;
-  padding: 30px 0px;
-  height: 580px;
+  padding: 200px 0px 100px;
+  height: 700px;
 }
 .contact .container {
   position: relative;
