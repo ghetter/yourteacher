@@ -1,7 +1,6 @@
 const body = document.querySelector('body');
 toggle = document.querySelector('.nav__burger'),
-menu = document.querySelector('.nav__list'),
-menuitem = document.querySelector('.nav__item');
+menu = document.querySelector('.nav__list')
 
 toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
@@ -9,11 +8,13 @@ toggle.addEventListener("click", () => {
   body.classList.toggle('locked');
 });
 
-menuitem.addEventListener("click", () => {
-  toggle.classList.toggle("active");
-  menu.classList.toggle('active');
-  body.classList.toggle('locked');
-});
+document.querySelectorAll('.nav__item').forEach(item => {
+  item.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    menu.classList.toggle('active');
+    body.classList.toggle('locked');
+  });
+})
   
   if (window.matchMedia('(max-width: 1024px)').matches) {
     var flkty = new Flickity( '.service-carousel', {
