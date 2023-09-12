@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <title>Your Teacher - Онлайн Школа</title>
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="css/flickity.css">
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     </head>
@@ -17,12 +17,17 @@
                         <div class="company__name">Your Teacher</div>
                     </div>
                     <nav class="header__navigation nav">
+                        <div class="nav__burger">
+                            <span class="first-line"></span>
+                            <span class="second-line"></span>
+                            <span class="third-line"></span>
+                        </div>
                         <ul class="nav__list">
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#subjects">Предметы</a></li>
-                            <li><a href="#tutors">Преподаватели</a></li>
-                            <li><a href="#service">Стоимость</a></li>
-                            <li><a href="#contact">Связаться с нами</a></li>
+                            <li><a class="nav__item" href="#targets">О нас</a></li>
+                            <li><a class="nav__item" href="#subjects">Предметы</a></li>
+                            <li><a class="nav__item" href="#tutors">Преподаватели</a></li>
+                            <li><a class="nav__item" href="#service">Стоимость</a></li>
+                            <li><a class="nav__item" href="#contact">Связаться с нами</a></li>
                         </ul>
                     </nav>
 
@@ -1541,7 +1546,7 @@
                             <img src="images/gradient.png" class="decoration__gradient-right" alt="">
                         </div>
                         <div class="contact__content">
-                            <div class="contact__title">Заинтересовали? Свяжитесь с нами!</div>
+                            <div class="contact__title">Заинтересовали? <br> Свяжитесь с нами!</div>
                             <div class="contact__row">
                                 <a href="#" class="contant__email contact__btn">
                                     <span>Заполнить форму</span>

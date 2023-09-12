@@ -107,10 +107,20 @@ body {
   font-family: "Roboto", sans-serif;
   color: #1D1D1D;
 }
+body.locked {
+  overflow: hidden;
+}
 
 .wrapper {
-  min-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header {
@@ -152,6 +162,29 @@ body {
   font-size: 24px;
 }
 
+.nav__burger {
+  display: none;
+}
+.nav__burger span {
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: #00052E;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav__burger.active span:nth-child(1) {
+  -webkit-transform: translateY(11px) rotateZ(-45deg);
+          transform: translateY(11px) rotateZ(-45deg);
+}
+.nav__burger.active span:nth-child(2) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.nav__burger.active span:nth-child(3) {
+  -webkit-transform: translateY(-11px) rotateZ(45deg);
+          transform: translateY(-11px) rotateZ(45deg);
+}
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,20 +192,68 @@ body {
   gap: 40px;
 }
 
+@media (max-width: 1024px) {
+  .nav__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+    position: fixed;
+    top: 45px;
+    right: 30px;
+    overflow: hidden;
+    z-index: 30;
+  }
+  .nav__list {
+    position: fixed;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+    z-index: 29;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .nav__list.active {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    background: url("../images/gradient.png") center no-repeat;
+    background-size: cover;
+    background-color: #fff;
+  }
+}
 .welcome {
   background: url(../../images/111.svg) top center no-repeat;
   background-color: #FDF8EE;
   width: 100%;
-  padding-top: 160px;
+  padding: 160px 0px;
+  min-height: 100vh;
 }
 .welcome__container {
   height: 100vh;
-  max-height: 1920px;
 }
 .welcome__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
   gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -185,6 +266,7 @@ body {
   -webkit-box-flex: 40%;
       -ms-flex: 40% 1 0px;
           flex: 40% 1 0;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,12 +344,16 @@ body {
 }
 .targets__background {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 800%;
+  top: 0px;
+  left: 0;
+  right: 0;
 }
 .targets__background img {
   position: absolute;
-  top: -70%;
+  top: -50px;
+  left: 25%;
 }
 
 .target {
@@ -277,11 +363,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 25px;
 }
 .target__icon {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 20px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 .target__icon-inner {
   display: -webkit-box;
@@ -290,6 +382,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -311,52 +406,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media (max-width: 1480px) {
-  .header .company__name {
-    font-size: 20px;
-  }
-  .welcome__title {
-    font-size: 55px;
-  }
-  .targets {
-    padding: 30px 0px;
-  }
-  .targets .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .targets__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 80%;
-  }
-  .target {
-    width: 100%;
-  }
-  .target__icon-inner {
-    width: 64px;
-    height: 64px;
-  }
-  .target__icon-inner img {
-    width: 90%;
-  }
-  .target__title {
-    font-size: 20px;
-  }
-  .target__subtitle {
-    font-size: 15px;
-  }
-}
 .subjects {
   padding: 99px 0px;
   background-color: #fff;
@@ -965,37 +1014,36 @@ body {
 }
 .contact .decoration__circles-left {
   position: absolute;
-  top: -90px;
+  top: -35%;
   left: -70px;
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
 .contact .decoration__circles-right {
   position: absolute;
-  top: -65px;
+  top: -30%;
   right: -65px;
 }
 .contact .decoration__arrow {
   position: absolute;
-  bottom: -20px;
-  left: 161px;
+  bottom: 5%;
+  left: 10%;
 }
 .contact .decoration__arrow path {
   fill: #FF7426;
 }
 .contact .decoration__lamp {
   position: absolute;
-  bottom: 30px;
-  right: 161px;
+  bottom: 5%;
+  right: 10%;
 }
 .contact .decoration__gradient-left {
   position: absolute;
-  bottom: 0;
-  left: 0;
 }
 .contact .decoration__gradient-right {
   position: absolute;
-  bottom: 0;
+  bottom: -25%;
+  left: 0;
   right: 0;
 }
 .contact__title {
@@ -1015,7 +1063,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 80px;
 }
 .contact__row .link-sign {
   position: relative;
@@ -1052,6 +1099,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   color: #fff;
+  white-space: nowrap;
 }
 
 .footer {
@@ -1123,4 +1171,181 @@ body {
 .ftr-subnav__item {
   color: #606060;
   font-size: 19px;
+}
+
+@media (max-width: 1480px) {
+  .header .company__name {
+    font-size: 20px;
+  }
+  .welcome__title {
+    font-size: 55px;
+  }
+  .targets {
+    padding: 30px 0px;
+  }
+  .targets .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .targets__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+  }
+  .target {
+    width: 100%;
+  }
+  .target__icon-inner {
+    width: 64px;
+    height: 64px;
+  }
+  .target__icon-inner img {
+    width: 90%;
+  }
+  .target__title {
+    font-size: 20px;
+  }
+  .target__subtitle {
+    font-size: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .welcome__title {
+    font-size: 50px;
+    white-space: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .welcome {
+    padding: 160px 0px;
+  }
+  .welcome__container {
+    min-height: 100vh;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .welcome__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .welcome__info {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .welcome__cover {
+    -webkit-box-flex: 1;
+        -ms-flex: auto 0 1;
+            flex: auto 0 1;
+    width: 50%;
+  }
+  .welcome__title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .welcome__more {
+    padding: 16px 24px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .welcome__more::after {
+    display: block;
+  }
+  .welcome__more-text {
+    font-size: 20px;
+  }
+  .targets {
+    padding: 15px 0px;
+  }
+  .targets__content {
+    width: 100%;
+    gap: 30px;
+  }
+  .target__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .target__icon-inner {
+    width: 48px;
+    height: 48px;
+  }
+  .target__title {
+    margin-bottom: 10px;
+  }
+  .contact .container {
+    width: 90%;
+  }
+  .contact .decoration img:not(.decoration__gradient-left, .decoration__gradient-right) {
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
+  }
+  .contact__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact__title {
+    font-size: 36px;
+  }
+  .contact__btn {
+    padding: 6px 10px;
+  }
+  .contact__btn span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .welcome__title {
+    font-size: 40px;
+  }
+  .welcome__more-text {
+    font-size: 16px;
+  }
+  .welcome__cover {
+    width: 70%;
+  }
+  .subjects__title, .feedbacks__title, .tutors__title, .contact__title {
+    font-size: 36px;
+  }
+  .contact__content {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .contact__title {
+    font-size: 28px;
+  }
+  .contact__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__btn {
+    padding: 10px 16px;
+  }
 }

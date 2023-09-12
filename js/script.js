@@ -1,5 +1,19 @@
+const body = document.querySelector('body');
+toggle = document.querySelector('.nav__burger'),
+menu = document.querySelector('.nav__list'),
+menuitem = document.querySelector('.nav__item');
 
-  
+toggle.addEventListener("click", () => {
+  toggle.classList.toggle("active");
+  menu.classList.toggle('active');
+  body.classList.toggle('locked');
+});
+
+menuitem.addEventListener("click", () => {
+  toggle.classList.toggle("active");
+  menu.classList.toggle('active');
+  body.classList.toggle('locked');
+});
   
   if (window.matchMedia('(max-width: 1024px)').matches) {
     var flkty = new Flickity( '.service-carousel', {
