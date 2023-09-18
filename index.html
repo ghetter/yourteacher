@@ -9,13 +9,13 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="header">
+            <header id="welcome" class="header">
                 <div class="container">
                     <div class="header__company company">
                         <div class="company__icon">
                             <img src="images/logo.svg" alt="logo">
                         </div>
-                        <div class="company__name">Your Teacher - Business Flow</div>
+                        <div class="company__name">Your Teacher - Подготовка к ЕГЭ/ОГЭ</div>
                     </div>
                     <nav class="header__navigation nav">
                         <div class="nav__burger">
@@ -24,12 +24,48 @@
                             <span class="third-line"></span>
                         </div>
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="#targets">О нас</a></li>
-                            <li class="nav__item"><a href="#subjects">Предметы</a></li>
-                            <li class="nav__item"><a href="#tutors">Преподаватели</a></li>
-                            <li class="nav__item"><a href="#service">Стоимость</a></li>
-                            <li class="nav__item"><a href="#contact">Связаться с нами</a></li>
+                            <li class="nav__item nav__item-has-child">
+                                <span>Компания</span>
+                                <ul class="subnav__list">
+                                    <li class="subnav__item"><a href="#" class="subnav__link">О нас</a></li>
+                                    <li class="subnav__item"><a href="#" class="subnav__link">Как проходит обучение?</a></li>
+                                    <li class="subnav__item"><a href="#" class="subnav__link">Прайс-лист</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item nav__item-has-child">
+                                <span>Предметы</span>
+                                <ul class="subnav__list">
+                                    <li class="subnav__item"><a href="#" class="subnav__link">Предметы</a></li>
+                                    <li class="subnav__item"><a href="#" class="subnav__link">Преподаватели</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item nav__item-has-child">
+                                <span>Поддержка</span>
+                                <ul class="subnav__list">
+                                    <li class="subnav__item"><a href="#" class="subnav__link">FAQ</a></li>
+                                    <li class="subnav__item"><a href="#" class="subnav__link">Личные данные</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item nav__item-has-child">
+                                <span>Контакты</span>
+                                <ul class="subnav__list">
+                                    <li class="subnav__item"><a href="#" class="subnav__link">Группа ВКонтакте</a></li>
+                                    <li class="subnav__item"><a href="#" class="subnav__link">Наш номер</a></li>
+                                    <li class="subnav__item"><a href="#" class="subnav__link">Наша почта</a></li>
+                                </ul>                                
+                            </li>
                         </ul>
+                        <div class="page-map" user-select="none">
+                            <div class="page-map__name">Карта сайта</div>
+                            <ul class="page-map__list">
+                                <li class="page-map__item"><a href="#welcome">Главная</a></li>
+                                <li class="page-map__item"><a href="#targets">О нас</a></li>
+                                <li class="page-map__item"><a href="#subjects">Предметы</a></li>
+                                <li class="page-map__item"><a href="#tutors">Преподаватели</a></li>
+                                <li class="page-map__item"><a href="#service">Стоимость</a></li>
+                                <li class="page-map__item"><a href="#contact">Связаться с нами</a></li>
+                            </ul>
+                        </div>
                     </nav>
 
                 </div>
@@ -38,6 +74,13 @@
                 <div class="welcome">
                     <div class="welcome__container container">
                         <div class="welcome__content">
+                            <div class="welcome__hashtags">
+                                <div class="hashtag hashtag-first">Индивидуальный_подход</div>
+                                <div class="hashtag hashtag-second">Профориентация</div>
+                                <div class="hashtag hashtag-third">ЕГЭ/ОГЭ</div>
+                                <div class="hashtag hashtag-fourth">Внимание_к_деталям_вашей_мечты</div>
+                                <div class="hashtag hashtag-fifth">Дело_по_душе</div>
+                            </div>
                             <div class="welcome__column welcome__info">
                                 <h1 class="welcome__title">Разумный <span class="text-highlighted">выбор</span><br> для <span class="text-highlighted">будущего</span></h1>
                                 <a class="welcome__more" href="#targets"><span class="welcome__more-text">Подробнее</span></a>
@@ -63,7 +106,7 @@
                                     </div>
                                     <div class="target__desc">
                                         <div class="target__title">Актуальность и качество</div>
-                                        <div class="target__subtitle">Актуальные и качественные программы обучения.</div>
+                                        <div class="target__subtitle">Актуальные и качественные программы подготовки к ЕГЭ/ОГЭ</div>
                                     </div>
                                 </div>
                             </div>
@@ -300,7 +343,7 @@
                                         </div></div>
                                     <div class="subject__info">
                                         <div class="subject__tag-n-rate">
-                                            <div class="subject__tag">Русский язык/литература</div>
+                                            <div class="subject__tag">Русский язык</div>
                                             <div class="subject__rating rating">
                                                 <div class="rating__body">
                                                     <div class="rating__star star star-active">
@@ -394,7 +437,7 @@
                                         </div></div>
                                     <div class="subject__info">
                                         <div class="subject__tag-n-rate">
-                                            <div class="subject__tag">Русский язык/литература</div>
+                                            <div class="subject__tag">Русская литература</div>
                                             <div class="subject__rating rating">
                                                 <div class="rating__body">
                                                     <div class="rating__star star star-active">
@@ -1149,7 +1192,7 @@
                                 <img draggable="false" src="images/experience/cover.png" alt="">
                             </div>
                             <div class="advantages__column advantages__info">
-                                <h2 class="advantages__title section-title">Премиальный <span class="text-highlighted">опыт</span> <br> обучения</h2>
+                                <h2 class="advantages__title section-title">Уникальная <span class="text-highlighted">технология</span> <br> обучения</h2>
                                 <ul class="advantages__list">
                                     <li class="advantages__item advantage">
                                         <div class="advantage__icon">
@@ -1158,7 +1201,7 @@
                                             </div>
                                         </div>
                                         <div class="advantage__info">
-                                            <h3 class="advantage__title">Легкодоступность материалов</h3>
+                                            <h3 class="advantage__title">Подготовка к ЕГЭ/ОГЭ</h3>
                                         </div>
                                     </li>
                                     <li class="advantages__item advantage">
@@ -1168,10 +1211,101 @@
                                             </div>
                                         </div>
                                         <div class="advantage__info">
-                                            <h3 class="advantage__title">Увлекательный процесс</h3>
+                                            <h3 class="advantage__title">Профориентация</h3>
+                                        </div>
+                                    </li>
+                                    <li class="advantages__item advantage">
+                                        <div class="advantage__icon">
+                                            <div class="advantage__icon-inner">
+                                                <img src="images/experience/advantages/2-wonderful-studying.svg" alt="wonderful studing">
+                                            </div>
+                                        </div>
+                                        <div class="advantage__info">
+                                            <h3 class="advantage__title">Многоуровневое взаимодействие</h3>
                                         </div>
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="studying section">
+                    <div class="container">
+                        <div class="studying__content">
+                            <div class="studying__title section-title">
+                                Этапы обучения
+                            </div>
+                            <div class="studying__stages">
+                                <div class="studying__stage st-stage">
+                                    <div class="st-stage__number">1</div>
+                                    <div class="st-stage__content">
+                                        <div class="st-stage__name">Начало сотрудничества</div>
+                                        <div class="st-stage__info">
+                                            Постановка цели и задач обучения, плана действий. <br> Начало занятий. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="studying__stage st-stage">
+                                    <div class="st-stage__number">2</div>
+                                    <div class="st-stage__content">
+                                        <div class="st-stage__name">Идеи и организация профессионального пути</div>
+                                    </div>
+                                </div>
+                                <div class="studying__stage st-stage">
+                                    <div class="st-stage__number">3</div>
+                                    <div class="st-stage__content">
+                                        <div class="st-stage__name">Следование плану и первые успехи</div>
+                                        <div class="st-stage__info">
+                                            Анализ способностей ученика и заполнение "RoadMap".
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="studying__stage st-stage">
+                                    <div class="st-stage__number">4</div>
+                                    <div class="st-stage__content">
+                                        <div class="st-stage__name">Поступление в учебное заведение</div>
+                                        <div class="st-stage__info">
+                                            Сопровождение ученика и родителя в вопросах поступления и обучения!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="studying__stage st-stage">
+                                    <div class="st-stage__number">5</div>
+                                    <div class="st-stage__content">
+                                        <div class="st-stage__name">Сопровождение в образовательном учреждении</div>
+                                        <div class="st-stage__info">
+                                            Льготы для наших выпускников.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="studying__stage st-stage">
+                                    <div class="st-stage__number">6</div>
+                                    <div class="st-stage__content">
+                                        <div class="st-stage__name">Анализ профессиональной ситуации</div>
+                                        <div class="st-stage__info">
+                                            Корректировка чек-листа профессионального роста под новые требования рынка труда.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="studying__stage st-stage">
+                                    <div class="st-stage__number">7</div>
+                                    <div class="st-stage__content">
+                                        <div class="st-stage__name">Формирование кейс-проекта</div>
+                                        <div class="st-stage__info">
+                                            Создание кейс-проекта под профессиональные навыки ученика под портфолио.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="studying__stage st-stage">
+                                    <div class="st-stage__number">8</div>
+                                    <div class="st-stage__content">
+                                        <div class="st-stage__name">Экзамен</div>
+                                        <div class="st-stage__info">
+                                            Защита кейс-проекта. Структурированное портфолио, размещение резюме, формирование плана к самозанятости!
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1187,15 +1321,14 @@
                                 <div class="feedbacks__item feedback carousel-cell">
                                     <div class="feedback__content">
                                         <div class="feedback__message">
-                                            “Teachings of the great explore of truth, the master-builder of human happiness. no one rejects,dislikes, or avoids pleasure itself, pleasure itself”
+                                            "Школа Your Teacher  - лучшая! Подруга посоветовала эту школу, так как она сама готовилась к ЕГЭ по химии и биологии и осталась довольна. И я тоже довольная результатом! Сдавала ЕГЭ по химии, по биологии на 89! Общее впечатление от преподавателей хорошее, знания легко усваиваются, всегда с интересом и удовольствием проходит время. Спасибо!!!"
                                         </div>
                                         <div class="feedback__author fb-author">
                                             <div class="fb-author__picture">
                                                 <img src="images/feedbacks/feedbacks.png" alt="">
                                             </div>
                                             <div class="fb-author__info">
-                                                <div class="fb-author__name">Finlay Kirk</div>
-                                                <div class="fb-author__status">Student</div>
+                                                <div class="fb-author__name">Софья Михайленко</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1203,15 +1336,14 @@
                                 <div class="feedbacks__item feedback carousel-cell">
                                     <div class="feedback__content">
                                         <div class="feedback__message">
-                                            “Complete account of the system and expound the actual Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots”
+                                            "Татьяна Андреевна - отличный преподаватель, занимаюсь с ней на протяжении уже 5 месяцев, даже летом, чтобы не отставать по программе. В следующем году буду брать у неё подготовку к ЕГЭ по русскому. Преподаватель объясняет очень доступно, доходчиво, умеет расположить к себе и заинтересовать. Профессионал своего дела, всегда поможет и поправит. Жду не дождусь профориентационной программы!"
                                         </div>
                                         <div class="feedback__author fb-author">
                                             <div class="fb-author__picture">
                                                 <img src="images/feedbacks/feedbacks.png" alt="">
                                             </div>
                                             <div class="fb-author__info">
-                                                <div class="fb-author__name">Dannette P. Cervantes</div>
-                                                <div class="fb-author__status">Student</div>
+                                                <div class="fb-author__name">Полина Шатохина</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1219,7 +1351,7 @@
                                 <div class="feedbacks__item feedback carousel-cell">
                                     <div class="feedback__content">
                                         <div class="feedback__message">
-                                            “There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour”
+                                            Очень приятный парень. В истории была полный ноль. Теперь начинаю понимать предмет. Даёт весь необходимый материал для сдачи экзамена (ЕГЭ). Полное понимание, если что-то непонятно - объясняет. Невероятно комфортно заниматься и подготовка к экзамену стала любимым делом. Можно и посмеяться, и поспорить. <br> Рекомендую!
                                         </div>
                                         <div class="feedback__author fb-author">
                                             <div class="fb-author__picture">
@@ -1227,7 +1359,6 @@
                                             </div>
                                             <div class="fb-author__info">
                                                 <div class="fb-author__name">Clara R. Attman</div>
-                                                <div class="fb-author__status">Student</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1304,12 +1435,9 @@
                                         <div class="tutor__bio">
                                             <div class="tutor__name">Михаил Слободчиков</div>
                                             <div class="tutor__status">Опыт работы: 5 лет</div>
-                                            <div class="tutor__quote">
-                                                "Краткая справка"
-                                            </div>
                                         </div>
                                         <div class="tutor__disciplines-n-socials">
-                                            <div class="tutor__disciplines">Обществознание / Математика</div>
+                                            <div class="tutor__disciplines">Обществознание / История / <br>Математика</div>
                                             <div class="tutor__socials t-socials">
                                                 <ul class="t-socials__list">
                                                     <li class="t-socials__item">
@@ -1332,9 +1460,6 @@
                                         <div class="tutor__bio">
                                             <div class="tutor__name">Татьяна Мысляева</div>
                                             <div class="tutor__status">Опыт работы: 5 лет</div>
-                                            <div class="tutor__quote">
-                                                "Краткая справка"
-                                            </div>
                                         </div>
                                         <div class="tutor__disciplines-n-socials">
                                             <div class="tutor__disciplines">Русский язык / Русская литература</div>
@@ -1360,12 +1485,9 @@
                                         <div class="tutor__bio">
                                             <div class="tutor__name">Софья Толстенкова</div>
                                             <div class="tutor__status">Опыт работы: 2 года</div>
-                                            <div class="tutor__quote">
-                                                "Краткая справка"
-                                            </div>
                                         </div>
                                         <div class="tutor__disciplines-n-socials">
-                                            <div class="tutor__disciplines">Китайский язык</div>
+                                            <div class="tutor__disciplines">Английский язык / Китайский язык</div>
                                             <div class="tutor__socials t-socials">
                                                 <ul class="t-socials__list">
                                                     <li class="t-socials__item">
@@ -1388,9 +1510,6 @@
                                         <div class="tutor__bio">
                                             <div class="tutor__name">Кирилл Дробков</div>
                                             <div class="tutor__status">Опыт работы: 1 год</div>
-                                            <div class="tutor__quote">
-                                                "Краткая справка"
-                                            </div>
                                         </div>
                                         <div class="tutor__disciplines-n-socials">
                                             <div class="tutor__disciplines">Информатика и ИКТ / Математика</div>
@@ -1416,9 +1535,6 @@
                                         <div class="tutor__bio">
                                             <div class="tutor__name">Яна Брежнева</div>
                                             <div class="tutor__status">Опыт работы: 1 год</div>
-                                            <div class="tutor__quote">
-                                                "Краткая справка"
-                                            </div>
                                         </div>
                                         <div class="tutor__disciplines-n-socials">
                                             <div class="tutor__disciplines">...</div>
@@ -1444,9 +1560,6 @@
                                         <div class="tutor__bio">
                                             <div class="tutor__name">Ульяна Власова</div>
                                             <div class="tutor__status">Опыт работы: 1 год</div>
-                                            <div class="tutor__quote">
-                                                "Краткая справка"
-                                            </div>
                                         </div>
                                         <div class="tutor__disciplines-n-socials">
                                             <div class="tutor__disciplines">Биология / Химия</div>
@@ -1471,10 +1584,7 @@
                                         </div>
                                         <div class="tutor__bio">
                                             <div class="tutor__name">Алина Ковалёва</div>
-                                            <div class="tutor__status">Опыт работы: полгода</div>
-                                            <div class="tutor__quote">
-                                                "Краткая справка"
-                                            </div>
+                                            <div class="tutor__status">Опыт работы: 1 год</div>
                                         </div>
                                         <div class="tutor__disciplines-n-socials">
                                             <div class="tutor__disciplines">Английский язык</div>
@@ -1620,7 +1730,7 @@
                         <div class="contact__content">
                             <div class="contact__title">Заинтересовали? <br> Свяжитесь с нами!</div>
                             <div class="contact__row">
-                                <a target="_blank" href="https://vk.com/app6013442_-221967347" class="contant__email contact__btn">
+                                <a target="_blank" href="https://vk.com/app6013442_-221967347?form_id=1#form_id=1" class="contant__email contact__btn">
                                     <span>Заполнить форму</span>
                                 </a>
                                 <span class="link-sign">&</span>
@@ -1650,7 +1760,7 @@
                                 <div class="ftr-column__subnav ftr-subnav">
                                     <div class="ftr-subnav__list">
                                         <a href="#advantages" class="ftr-subnav__item">О нас</a>
-                                        <a href="#" class="ftr-subnav__item">Как проходит обучение?</a>
+                                        <a href="#studying" class="ftr-subnav__item">Как проходит обучение?</a>
                                         <a href="#price" class="ftr-subnav__item">Прайс-лист</a>
                                     </div>
                                 </div>
@@ -1677,9 +1787,9 @@
                                 <div class="ftr-column__title">Контакты</div>
                                 <div class="ftr-column__subnav ftr-subnav">
                                     <div class="ftr-subnav__list">
-                                        <a href="tel:+79236096613" class="ftr-subnav__item">+7 (923) 609-6613</a>
-                                        <a href="mailto:slobodchikov-mikhail@list.ru" class="ftr-subnav__item">slobodchikov-mikhail@list.ru</a>
                                         <a target="_blank" href="https://vk.com/yourteacher_business_flow" class="ftr-subnav__item">Группа ВКонтакте</a>
+                                        <a href="tel:+79236096613" class="ftr-subnav__item">+7 (923) 609-6613</a>
+                                        <a href="mailto:your_teacher_business_flow@list.ru" class="ftr-subnav__item">your_teacher_business_flow@list.ru</a>
                                     </div>
                                 </div>
                             </div>
@@ -1691,7 +1801,7 @@
                 </div>
             </footer>
         </div>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="js/flickity.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
