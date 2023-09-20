@@ -1748,6 +1748,16 @@ body.locked {
   .contact__btn span {
     font-size: 16px;
   }
+  .page-map {
+    padding: 10px;
+  }
+  .page-map__name {
+    font-size: 14px;
+  }
+  .page-map__list {
+    font-size: 12px;
+    gap: 15px;
+  }
 }
 @media (max-width: 500px) {
   .header .company__icon {
@@ -1807,6 +1817,28 @@ body.locked {
   }
   .tutor__picture {
     height: 200px;
+  }
+  .advantage__icon {
+    width: 64px;
+    height: 64px;
+    padding: 0;
+  }
+  .advantage__icon-inner {
+    width: 64px;
+    height: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantage__icon-inner img {
+    width: 50%;
+    height: 50%;
   }
 }
 @media (max-width: 374px) {
