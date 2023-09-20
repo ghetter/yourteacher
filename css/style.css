@@ -176,6 +176,8 @@ body.locked {
 .company__name {
   font-size: 24px;
   font-weight: 500;
+  white-space: wrap;
+  text-align: center;
 }
 
 .nav {
@@ -945,9 +947,16 @@ body.locked {
   left: -80%;
 }
 .feedbacks__list .flickity-viewport {
+  width: 100%;
   height: 500px !important;
 }
 .feedbacks__list .carousel-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-right: 4%;
 }
 .feedbacks__list .flickity-prev-next-button {
@@ -956,18 +965,14 @@ body.locked {
 .feedback {
   max-width: 417px;
   width: 30%;
-  min-height: -webkit-min-content;
-  min-height: -moz-min-content;
-  min-height: min-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 85%;
   background-color: #fff;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
 }
 .feedback__content {
   padding: 32px;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   height: -webkit-max-content;
@@ -990,17 +995,24 @@ body.locked {
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  justify-self: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: self-end;
+      -ms-grid-row-align: self-end;
+      align-self: self-end;
 }
 .fb-author__picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: beige;
   justify-self: flex-end;
   -ms-flex-item-align: start;
       align-self: flex-start;
-}
-.fb-author__picture img {
   -webkit-filter: blur(2px);
           filter: blur(2px);
 }

@@ -53,6 +53,7 @@ if (window.matchMedia('(max-width: 1279px)').matches) {
       cellAlign: 'center',
       contain: true,
       groupCells: 1,
+      adaptiveHeight: true,
     }); 
 
 
@@ -81,6 +82,7 @@ if (window.matchMedia('(max-width: 1279px)').matches) {
     cellAlign: 'left',
     contain: true,
     groupCells: 3,
+    adaptiveHeight: true,
   }); 
 
   var flkty = new Flickity( '.tut-carousel', {
