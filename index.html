@@ -34,6 +34,19 @@
     </head>
     <body>
         <div class="wrapper">
+            <div class="modal modal-personal">
+                <div class="modal__body">
+                    <div class="modal__header">
+                        <div class="modal__title">Личные данные</div>
+                    </div>
+                    <div class="modal__subtitle">
+                        Мы заботимся о вашей конфиденциальности и безопасности ваших личных данных. <br> <br>Это значит, что все данные, полученные нами от вас, не передаются третьим лицам. <br> <br>Спасибо за ваше доверие!
+                    </div>
+                    <div class="modal__footer">
+                        <div class="modal__close">Ясненько  🥰</div>
+                    </div>
+                </div>
+            </div>
             <header id="welcome" class="header">
                 <div class="container">
                     <div class="header__company company">
@@ -68,7 +81,7 @@
                                 <span>Поддержка</span>
                                 <ul class="subnav__list">
                                     <li class="subnav__item"><a href="#" class="subnav__link">FAQ</a></li>
-                                    <li class="subnav__item"><a href="#" class="subnav__link">Личные данные</a></li>
+                                    <li class="subnav__item"><a href="#" onClick="return false;" class="subnav__link modal-link">Личные данные</a></li>
                                 </ul>
                             </li>
                             <li class="nav__item nav__item-has-child">
@@ -84,7 +97,7 @@
                             <div class="page-map__name">Карта сайта</div>
                             <ul class="page-map__list">
                                 <li class="page-map__item"><a href="#welcome">Главная</a></li>
-                                <li class="page-map__item"><a href="#targets">О нас</a></li>
+                                <li class="page-map__item"><a href="#advantages">О нас</a></li>
                                 <li class="page-map__item"><a href="#subjects">Предметы</a></li>
                                 <li class="page-map__item"><a href="#tutors">Преподаватели</a></li>
                                 <li class="page-map__item"><a href="#service">Стоимость</a></li>
@@ -99,6 +112,7 @@
                 <div class="welcome">
                     <div class="welcome__container container">
                         <div class="welcome__content">
+                            <!-- 
                             <div class="welcome__hashtags">
                                 <div class="hashtag hashtag-first">Индивидуальный_подход</div>
                                 <div class="hashtag hashtag-second">Профориентация</div>
@@ -106,6 +120,7 @@
                                 <div class="hashtag hashtag-fourth">Внимание_к_деталям_вашей_мечты</div>
                                 <div class="hashtag hashtag-fifth">Дело_по_душе</div>
                             </div>
+                            -->
                             <div class="welcome__column welcome__info">
                                 <h1 class="welcome__title">Разумный <span class="text-highlighted">выбор</span><br> для <span class="text-highlighted">будущего</span></h1>
                                 <a class="welcome__more" href="#targets"><span class="welcome__more-text">Подробнее</span></a>
@@ -1210,7 +1225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="advantages section">
+                <div id="advantages" class="advantages section">
                     <div class="container">
                         <div class="advantages__content">
                             <div class="advantages__column advantages__cover">
@@ -1255,7 +1270,7 @@
                     </div>
                 </div>
 
-                <div class="studying section">
+                <div id="studying" class="studying section">
                     <div class="container">
                         <div class="studying__content">
                             <div class="studying__title section-title">
@@ -1352,7 +1367,7 @@
                                             <div class="fb-author__picture">
                                             </div>
                                             <div class="fb-author__info">
-                                                <div class="fb-author__name">Полина Шатохина</div>
+                                                <div class="fb-author__name">Полина</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1366,7 +1381,7 @@
                                             <div class="fb-author__picture">
                                             </div>
                                             <div class="fb-author__info">
-                                                <div class="fb-author__name">Софья Толстенкова</div>
+                                                <div class="fb-author__name">Софья</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1380,7 +1395,7 @@
                                             <div class="fb-author__picture">
                                             </div>
                                             <div class="fb-author__info">
-                                                <div class="fb-author__name">Софья Михайленко</div>
+                                                <div class="fb-author__name">Елизавета</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1394,7 +1409,7 @@
                                             <div class="fb-author__picture">
                                             </div>
                                             <div class="fb-author__info">
-                                                <div class="fb-author__name">Анастасия Завлавловская</div>
+                                                <div class="fb-author__name">Анастасия</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1408,7 +1423,7 @@
                                             <div class="fb-author__picture">
                                             </div>
                                             <div class="fb-author__info">
-                                                <div class="fb-author__name">Владислав Крыжевников</div>
+                                                <div class="fb-author__name">Владислав</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1422,7 +1437,7 @@
                                             <div class="fb-author__picture">
                                             </div>
                                             <div class="fb-author__info">
-                                                <div class="fb-author__name">Ксения Скоробогатая</div>
+                                                <div class="fb-author__name">Ксения</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1520,31 +1535,6 @@
                                     <div class="tutor__content">
                                         <div class="tutor__picture">
                                             <div class="tutor__picture-inner">
-                                                <img src="images/tutors/Kirill.jpg" alt="tutor - Kirill Drobkov">
-                                            </div>
-                                        </div>
-                                        <div class="tutor__bio">
-                                            <div class="tutor__name">Кирилл Дробков</div>
-                                            <div class="tutor__status">Опыт работы: 1 год</div>
-                                        </div>
-                                        <div class="tutor__disciplines-n-socials">
-                                            <div class="tutor__disciplines">Информатика и ИКТ / Математика</div>
-                                            <div class="tutor__socials t-socials">
-                                                <ul class="t-socials__list">
-                                                    <li class="t-socials__item">
-                                                        <a target="_blank" href="https://vk.com/ureallywantknow">
-                                                            <img src="images/icons/vk.svg" alt="vk">
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tutors__item tutor carousel-cell">
-                                    <div class="tutor__content">
-                                        <div class="tutor__picture">
-                                            <div class="tutor__picture-inner">
                                                 <img src="images/tutors/Yana.jpg" alt="tutor - Yana Brezhneva">
                                             </div>
                                         </div>
@@ -1570,12 +1560,37 @@
                                     <div class="tutor__content">
                                         <div class="tutor__picture">
                                             <div class="tutor__picture-inner">
+                                                <img src="images/tutors/Kirill.jpg" alt="tutor - Kirill Drobkov">
+                                            </div>
+                                        </div>
+                                        <div class="tutor__bio">
+                                            <div class="tutor__name">Кирилл Дробков</div>
+                                            <div class="tutor__status">Опыт работы: 2 года</div>
+                                        </div>
+                                        <div class="tutor__disciplines-n-socials">
+                                            <div class="tutor__disciplines">Информатика и ИКТ / Математика</div>
+                                            <div class="tutor__socials t-socials">
+                                                <ul class="t-socials__list">
+                                                    <li class="t-socials__item">
+                                                        <a target="_blank" href="https://vk.com/ureallywantknow">
+                                                            <img src="images/icons/vk.svg" alt="vk">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tutors__item tutor carousel-cell">
+                                    <div class="tutor__content">
+                                        <div class="tutor__picture">
+                                            <div class="tutor__picture-inner">
                                                 <img src="images/tutors/Ulyana.jpg" alt="tutor - Ulyana Vlasova">
                                             </div>
                                         </div>
                                         <div class="tutor__bio">
                                             <div class="tutor__name">Ульяна Власова</div>
-                                            <div class="tutor__status">Опыт работы: 1 год</div>
+                                            <div class="tutor__status">Опыт работы: 2 года</div>
                                         </div>
                                         <div class="tutor__disciplines-n-socials">
                                             <div class="tutor__disciplines">Биология / Химия</div>
@@ -1624,6 +1639,13 @@
                         <div class="service__content">
                             <div class="service__title  section-title">Стоимость</div>
                             <div class="service__list service-carousel">
+                                <div class="service__item plan plan-individual-owner carousel-cell">
+                                    <div class="plan__title">Занятие <br>с основателем</div>
+                                    <div class="plan__price">
+                                        <div class="plan__price-45">1 000р. / 45 минут</div>
+                                        <div class="plan__price-90">1 300р. / 90 минут</div>
+                                    </div>
+                                </div>
                                 <div class="service__item plan plan-individual carousel-cell">
                                     <div class="plan__title">Индивидуальное <br> занятие</div>
                                     <div class="plan__price">
@@ -1708,14 +1730,14 @@
                                     </div>
                                 </div>
                                 <div class="service__item plan plan-club carousel-cell">
-                                    <div class="plan__title">Клубная карта <br> "30 дней"</div>
+                                    <div class="plan__title">Клубная карта <br> (30 дней)</div>
                                     <div class="plan__price">
                                         <div class="plan__price-45">39 990р. - 45/90 минут*</div>
                                         <div class="plan__price-90">* - на выбор</div>
                                     </div>
                                 </div>
                                 <div class="service__item plan-expander carousel-cell">
-                                    <div class="plan-expander__title">Скидка 10% <br>на абонемент<br> по промо #препод</div>
+                                    <div class="plan-expander__title">Скидка 10% <br>на первый абонемент<br> по промо #препод</div>
                                     <div class="plan-expander__icon">
                                         <img src="images/icons/arrow-l2r.svg" alt="">
                                     </div>
@@ -1795,7 +1817,7 @@
                                 <div class="ftr-column__subnav ftr-subnav">
                                     <div class="ftr-subnav__list">
                                         <a href="#" class="ftr-subnav__item">FAQ</a>
-                                        <a href="#" class="ftr-subnav__item">Личные данные</a>
+                                        <a href="#" onClick="return false;" class="ftr-subnav__item modal-link">Личные данные</a>
                                     </div>
                                 </div>
                             </div>
